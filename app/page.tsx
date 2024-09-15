@@ -1,8 +1,8 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from 'react';
+import { motion, useAnimation, useScroll } from 'framer-motion';
 import Head from 'next/head';
-import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 
 const staticGitHubData = {
   name: "Mark",
@@ -60,7 +60,6 @@ export default function HomePage() {
   const [darkMode, setDarkMode] = useState(true);
   const controls = useAnimation();
   const { scrollYProgress } = useScroll();
-  const yPosAnim = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   useEffect(() => {
     const ascii = asciiRef.current;
@@ -186,7 +185,7 @@ export default function HomePage() {
 
         <nav className="mb-8">
           <ul className="flex flex-wrap justify-center space-x-4 text-lg">
-            {['PROFILE', 'SKILLS', 'PROJECTS', 'CONTACT'].map((item, index) => (
+            {['PROFILE', 'SKILLS', 'PROJECTS', 'CONTACT'].map((item) => (
               <motion.li
                 key={item}
                 variants={itemVariants}
@@ -237,7 +236,7 @@ export default function HomePage() {
         >
           <h2 className="text-2xl font-bold mb-4">{'>'} PINNED_REPOS</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
-            {staticGitHubData.pinnedRepos.map((repo, index) => (
+            {staticGitHubData.pinnedRepos.map((repo) => (
               <motion.div
                 key={repo.name}
                 variants={itemVariants}
