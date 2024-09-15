@@ -191,7 +191,7 @@ export default function HomePage() {
                 key={item}
                 variants={itemVariants}
               >
-                <a href={`#${item.toLowerCase()}`} className={`hover:${darkMode ? 'text-green-300' : 'text-green-700'} transition-colors`}>> {item}</a>
+                <a href={`#${item.toLowerCase()}`} className={`hover:${darkMode ? 'text-green-300' : 'text-green-700'} transition-colors`}>{'>'} {item}</a>
               </motion.li>
             ))}
           </ul>
@@ -204,7 +204,7 @@ export default function HomePage() {
           variants={itemVariants}
           className="mb-12"
         >
-          <h2 className="text-2xl font-bold mb-4">> DEVELOPER_PROFILE</h2>
+          <h2 className="text-2xl font-bold mb-4">{'>'} DEVELOPER_PROFILE</h2>
           <p className="mb-2">{staticGitHubData.bio}</p>
           <p className="mb-2">Public Repositories: {staticGitHubData.publicRepos}</p>
           <p>Contributions Last Year: {staticGitHubData.contributionsLastYear}</p>
@@ -217,7 +217,7 @@ export default function HomePage() {
           variants={itemVariants}
           className="mb-12"
         >
-          <h2 className="text-2xl font-bold mb-4">> TECH_ARSENAL</h2>
+          <h2 className="text-2xl font-bold mb-4">{'>'} TECH_ARSENAL</h2>
           <ul className="list-none">
             <li className="mb-2">Web: Next.js, React, JavaScript, HTML/CSS</li>
             <li className="mb-2">Mobile: Flutter</li>
@@ -235,7 +235,7 @@ export default function HomePage() {
           variants={itemVariants}
           className="mb-12"
         >
-          <h2 className="text-2xl font-bold mb-4">> PINNED_REPOS</h2>
+          <h2 className="text-2xl font-bold mb-4">{'>'} PINNED_REPOS</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
             {staticGitHubData.pinnedRepos.map((repo, index) => (
               <motion.div
@@ -269,7 +269,7 @@ export default function HomePage() {
           id="contact"
           variants={itemVariants}
         >
-          <h2 className="text-2xl font-bold mb-4">> SECURE_CHANNEL</h2>
+          <h2 className="text-2xl font-bold mb-4">{'>'} SECURE_CHANNEL</h2>
           <p className="mb-2">Connect for collaboration:</p>
           <p className="glitch-text text-xl font-bold">mgkram4@[REDACTED].com</p>
         </motion.section>
