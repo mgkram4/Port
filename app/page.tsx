@@ -157,16 +157,16 @@ export default function HomePage() {
             className={`text-xs md:text-sm leading-none whitespace-pre overflow-x-auto transition-all duration-50 inline-block text-left ${darkMode ? 'text-green-400' : 'text-green-800'}`}
           >
 {`
-     __   __       __   __    
-    |  \\ |  \\     |  \\ |  \\   
-    | ▓▓ | ▓▓     | ▓▓ | ▓▓   
-    | ▓▓ | ▓▓     | ▓▓ | ▓▓   
- __| ▓▓_| ▓▓_  __| ▓▓_| ▓▓_  
-|  \\ ▓▓   ▓▓ \\|  \\ ▓▓   ▓▓ \\ 
-| ▓▓ ▓▓\\▓▓▓▓▓▓| ▓▓ ▓▓\\▓▓▓▓▓▓
- \\▓▓\\▓▓  \\▓▓▓▓ \\▓▓\\▓▓  \\▓▓▓▓
-    \\▓▓  ▓▓       \\▓▓  ▓▓   
-     \\▓▓▓▓         \\▓▓▓▓    
+     __   __      
+    |  \\ |  \\    
+    | ▓▓ | ▓▓ |
+    | ▓▓ | ▓▓ |
+ __| ▓▓_| ▓▓_ | _
+|  \\ ▓▓   ▓▓ \\|  
+| ▓▓ ▓▓\\▓▓▓▓▓▓| 
+ \\▓▓\\▓▓  \\▓▓▓▓ 
+    \\▓▓  ▓▓      
+     \\▓▓▓▓
  
 `}
           </motion.pre>
