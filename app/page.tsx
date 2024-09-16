@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const staticGitHubData = {
   name: "Mark",
-  bio: "(⌐■-■) | Fullstack | ML",
+  bio: " Mobile | Fullstack | ML | Cloud | Data Analytics",
   publicRepos: 34,
   contributionsLastYear: 199,
   pinnedRepos: [
@@ -15,42 +15,42 @@ const staticGitHubData = {
       description: "Google Developer Student Clubs Solution Challenge 2024 project",
       stars: 4,
       url: "https://github.com/mgkram4/Hunter-Gather_GDSC-Solution-Challenge-2024",
-      tags: ["React", "Node.js", "MongoDB"]
+      tags: ["Next.js", "React", "Firebase", "Google Authentication", "Gemini AI"]
     },
     {
       name: "socal-gd-website",
       description: "Website for SoCal Game Developers",
       stars: 8,
       url: "https://github.com/GdscCpp/socal-gd-website",
-      tags: ["Next.js", "Tailwind CSS", "Vercel"]
+      tags: ["Next.js", "Tailwind CSS", "Firebase", "Gemini API", "Google Maps API"]
     },
     {
       name: "Vista-Pacific-Capital",
       description: "Website for Vista Pacific Capital",
       stars: 1,
       url: "https://github.com/mgkram4/Vista-Pacific-Capital",
-      tags: ["React", "SASS", "Netlify"]
+      tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
     },
     {
       name: "GDSC-Perfect-Pose",
       description: "Perfect Pose project for Google Developer Student Clubs",
       stars: 2,
       url: "https://github.com/mgkram4/GDSC-Perfect-Pose",
-      tags: ["Python", "OpenCV", "TensorFlow"]
+      tags: ["Flutter", "Firebase", "Flask", "TensorFlow", "OpenCV", "MediaPipe", "NumPy", "Computer Vision"]
     },
     {
       name: "MeidaPipes-Ball-Sort",
       description: "Ball sorting game using MediaPipe",
       stars: 1,
       url: "https://github.com/mgkram4/MeidaPipes-Ball-Sort",
-      tags: ["Python", "MediaPipe", "OpenCV"]
+      tags: ["Python", "MediaPipe", "OpenCV", "NumPy", "Computer Vision"]
     },
     {
       name: "Quote-Scrapping-Sentiment-Analysis",
       description: "Web scraping and sentiment analysis for quotes",
       stars: 1,
       url: "https://github.com/mgkram4/Quote-Scrapping-Sentiment-Analysis",
-      tags: ["Python", "BeautifulSoup", "NLTK"]
+      tags: ["Python", "Flask", "BeautifulSoup", "TextBlob", "Web Scraping"]
     }
   ]
 };
@@ -130,7 +130,7 @@ export default function HomePage() {
       className={`min-h-screen ${darkMode ? 'bg-black text-green-400' : 'bg-white text-green-800'} font-mono flex flex-col items-center`}
     >
       <Head>
-        <title>Mark | Full Stack Developer & ML Enthusiast</title>
+        <title>Mark | Full Stack Developer & Data Analytics Masters Student</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -144,7 +144,7 @@ export default function HomePage() {
           whileHover={{ scale: 1.05, textShadow: "0 0 8px rgb(34, 197, 94)" }}
           whileTap={{ scale: 0.95 }}
           onClick={() => setDarkMode(!darkMode)}
-          className={`fixed top-4 right-4 p-2 border-2 ${darkMode ? 'border-green-400 text-green-400 hover:bg-green-400 hover:text-black' : 'border-green-800 text-green-800 hover:bg-green-800 hover:text-white'} bg-transparent font-bold rounded transition-all duration-300`}
+          className={`fixed top-4 right-4 p-2 border-2 ${darkMode ? 'border-green-400 text-green-400 hover:bg-green-400 hover:text-black' : 'border-green-800 text-green-800 hover:bg-green-800 hover:text-white'} bg-transparent font-bold rounded transition-all duration-300 text-xs sm:text-sm`}
         >
           {darkMode ? '> SWITCH_MODE' : '> REVERT_MODE'}
         </motion.button>
@@ -179,7 +179,7 @@ export default function HomePage() {
             variants={itemVariants}
             className="text-xl mb-4"
           >
-            [WEB | MOBILE | ML]
+            [WEB | MOBILE | ML | CLOUD | DATA ANALYTICS]
           </motion.p>
         </header>
 
@@ -205,6 +205,8 @@ export default function HomePage() {
         >
           <h2 className="text-2xl font-bold mb-4">{'>'} DEVELOPER_PROFILE</h2>
           <p className="mb-2">{staticGitHubData.bio}</p>
+          <p className="mb-2">Seasoned software developer with 3+ years of experience as an undergraduate student and coding instructor.</p>
+          <p className="mb-2">Currently pursuing a Masters degree in Data Analytics.</p>
           <p className="mb-2">Public Repositories: {staticGitHubData.publicRepos}</p>
           <p>Contributions Last Year: {staticGitHubData.contributionsLastYear}</p>
         </motion.section>
@@ -218,12 +220,14 @@ export default function HomePage() {
         >
           <h2 className="text-2xl font-bold mb-4">{'>'} TECH_ARSENAL</h2>
           <ul className="list-none">
-            <li className="mb-2">Web: Next.js, React, JavaScript, HTML/CSS</li>
+            <li className="mb-2">Web: Next.js, React, JavaScript, HTML/CSS, Tailwind CSS</li>
             <li className="mb-2">Mobile: Flutter</li>
-            <li className="mb-2">Backend: Python Flask, PostgreSQL</li>
-            <li className="mb-2">ML/AI: TensorFlow, NLP, Classification</li>
-            <li className="mb-2">Data: Pandas, Data Analysis</li>
-            <li>Tools: Git, Firebase, CMS integration</li>
+            <li className="mb-2">Backend: Python Flask, PostgreSQL, AWS EC2</li>
+            <li className="mb-2">ML/AI: TensorFlow, Keras, scikit-learn, NLP, Classification, Computer Vision, YOLO</li>
+            <li className="mb-2">Data: Pandas, NumPy, Data Analysis, JMP, SQL, SAS, Matplotlib</li>
+            <li className="mb-2">Computer Vision: OpenCV, MediaPipe</li>
+            <li className="mb-2">Cloud: AWS</li>
+            <li>Tools: Git, Firebase, CMS integration, Framer Motion</li>
           </ul>
         </motion.section>
 
@@ -241,18 +245,22 @@ export default function HomePage() {
                 key={repo.name}
                 variants={itemVariants}
                 whileHover={{ scale: 1.05 }}
-                className={`border ${darkMode ? 'border-green-400' : 'border-green-800'} p-4 hover:${darkMode ? 'bg-green-900' : 'bg-green-100'} transition-all duration-300 rounded-lg shadow-lg`}
+                className={`border ${darkMode ? 'border-green-400' : 'border-green-800'} p-4 
+                            ${darkMode ? 'bg-black' : 'bg-white'} 
+                            hover:${darkMode ? 'bg-green-900/30' : 'bg-green-100/30'} 
+                            transition-all duration-300 rounded-lg shadow-lg 
+                            ${darkMode ? 'shadow-green-400/50' : 'shadow-green-800/50'}`}
               >
-                <h3 className="font-bold mb-2">
+                <h3 className="font-bold mb-2 text-left">
                   <a href={repo.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                    {repo.name}
+                    {'> '}{repo.name}
                   </a>
                 </h3>
-                <p className="mb-2">{repo.description}</p>
-                <p className="mb-2">Stars: {repo.stars}</p>
-                <div className="flex flex-wrap gap-2">
+                <p className="mb-2 text-left text-sm">{repo.description}</p>
+                <p className="mb-2 text-left text-sm">Stars: {repo.stars}</p>
+                <div className="flex flex-wrap gap-2 justify-start">
                   {repo.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className={`text-xs ${darkMode ? 'bg-green-700' : 'bg-green-200'} px-2 py-1 rounded-full`}>
+                    <span key={tagIndex} className={`text-xs ${darkMode ? 'bg-green-900' : 'bg-green-200'} px-2 py-1 rounded-full`}>
                       {tag}
                     </span>
                   ))}
@@ -268,9 +276,9 @@ export default function HomePage() {
           id="contact"
           variants={itemVariants}
         >
-          <h2 className="text-2xl font-bold mb-4">{'>'} SECURE_CHANNEL</h2>
+          <h2 className="text-2xl font-bold mb-4">{'>'} [REDACTED]</h2>
           <p className="mb-2">Connect for collaboration:</p>
-          <p className="glitch-text text-xl font-bold">mgkram4@[REDACTED].com</p>
+          <p className="glitch-text text-xl font-bold"> kram18.mg@gmail.com</p>
         </motion.section>
       </main>
 
