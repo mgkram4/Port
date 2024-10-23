@@ -11,46 +11,46 @@ const staticGitHubData = {
   contributionsLastYear: 199,
   pinnedRepos: [
     {
-      name: "Hunter-Gather_GDSC-Solution-Challenge-2024",
-      description: "Google Developer Student Clubs Solution Challenge 2024 project",
-      stars: 4,
-      url: "https://github.com/mgkram4/Hunter-Gather_GDSC-Solution-Challenge-2024",
-      tags: ["Next.js", "React", "Firebase", "Google Authentication", "Gemini AI"]
+      name: "X-Profile-Analyzer",
+      description: "Public profile analyzer for X (formerly Twitter)",
+      stars: 1,
+      url: "https://github.com/mgkram4/X-Profile-Analyzer",
+      tags: ["TypeScript", "Social Media Analytics", "Data Processing", "API Integration"]
+    },
+    {
+      name: "GsdcCpp-Perfect-Pose",
+      description: "Computer vision application for pose detection and analysis",
+      stars: 2,
+      url: "https://github.com/mgkram4/GsdcCpp-Perfect-Pose",
+      tags: ["C++", "OpenCV", "Computer Vision", "Machine Learning", "Real-time Processing"]
+    },
+    {
+      name: "NFSW-Blocker-Mobile",
+      description: "Mobile application for content filtering and blocking",
+      stars: 1,
+      url: "https://github.com/mgkram4/NFSW-Blocker-Mobile",
+      tags: ["Dart", "Flutter", "Content Filtering", "Mobile Development", "Image Processing"]
     },
     {
       name: "socal-gd-website",
-      description: "Website for SoCal Game Developers",
+      description: "Website for SoCal Google Developers",
       stars: 8,
       url: "https://github.com/GdscCpp/socal-gd-website",
-      tags: ["Next.js", "Tailwind CSS", "Firebase", "Gemini API", "Google Maps API"]
+      tags: ["TypeScript", "Next.js", "Tailwind CSS", "Firebase", "Google Maps API"]
     },
     {
       name: "Vista-Pacific-Capital",
       description: "Website for Vista Pacific Capital",
       stars: 1,
       url: "https://github.com/mgkram4/Vista-Pacific-Capital",
-      tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+      tags: ["TypeScript", "Next.js", "React", "Tailwind CSS", "Framer Motion"]
     },
     {
-      name: "GDSC-Perfect-Pose",
-      description: "Perfect Pose project for Google Developer Student Clubs",
-      stars: 2,
-      url: "https://github.com/mgkram4/GDSC-Perfect-Pose",
-      tags: ["Flutter", "Firebase", "Flask", "TensorFlow", "OpenCV", "MediaPipe", "NumPy", "Computer Vision"]
-    },
-    {
-      name: "MeidaPipes-Ball-Sort",
-      description: "Ball sorting game using MediaPipe",
-      stars: 1,
-      url: "https://github.com/mgkram4/MeidaPipes-Ball-Sort",
-      tags: ["Python", "MediaPipe", "OpenCV", "NumPy", "Computer Vision"]
-    },
-    {
-      name: "Quote-Scrapping-Sentiment-Analysis",
-      description: "Web scraping and sentiment analysis for quotes",
-      stars: 1,
-      url: "https://github.com/mgkram4/Quote-Scrapping-Sentiment-Analysis",
-      tags: ["Python", "Flask", "BeautifulSoup", "TextBlob", "Web Scraping"]
+      name: "Hunter-Gather",
+      description: "Google Developer Student Clubs Solution Challenge 2024 project",
+      stars: 4,
+      url: "https://github.com/mgkram4/Hunter-Gather_GDSC-Solution-Challenge-2024",
+      tags: ["TypeScript", "Next.js", "Firebase", "Google Authentication", "Gemini AI"]
     }
   ]
 };
