@@ -7,8 +7,8 @@ import { useEffect, useRef, useState } from 'react';
 const staticGitHubData = {
   name: "Mark",
   bio: " Mobile | Fullstack | ML | Cloud | Data Analytics",
-  publicRepos: 34,
-  contributionsLastYear: 199,
+  publicRepos: 43,
+  contributionsLastYear: 269,
   pinnedRepos: [
     {
       name: "X-Profile-Analyzer",
